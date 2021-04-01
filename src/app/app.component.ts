@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-material';
+  title = 'material-demo';
+  notification=0;
+  showSpinner=false;
+  opened=false;
+  loadData(){
+    this.showSpinner=true;
+    setTimeout(()=>{
+      this.showSpinner=false;
+    },5000); 
+  }
+
 }
